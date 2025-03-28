@@ -2,7 +2,7 @@
 import NodeTestMain from "@/components/NodeTest/NodeTestMain.vue";
 
 const routes = [
-    {path: '/NodeTestMain', component: NodeTestMain},
+    {path: './NodeTestMain', component: NodeTestMain},
 ];
 
 const router = createRouter({
