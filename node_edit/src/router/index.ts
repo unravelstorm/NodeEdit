@@ -2,6 +2,7 @@
 import NodeTestMain from "@/components/NodeTest/NodeTestMain.vue";
 
 const routes = [
+    {path: '/', redirect: '/NodeTestMain'},
     {path: '/NodeTestMain', component: NodeTestMain},
 ];
 

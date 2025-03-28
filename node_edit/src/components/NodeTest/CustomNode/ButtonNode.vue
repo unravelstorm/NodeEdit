@@ -18,6 +18,8 @@ props.data.NodeType = 10
       <v-card-title>按钮节点-{{props.data.NodeType}}</v-card-title>
       <v-card-subtitle>id:{{ props.id }}</v-card-subtitle>
       <v-text-field label="显示内容" variant="outlined" v-model="props.data.ButtonText"></v-text-field>
+      <v-text-field label="排序" type="number" variant="outlined" v-model="props.data.Order"></v-text-field>
+
     </v-card>
     <Handle type="source" :position="Position.Right"/>
   </v-container>

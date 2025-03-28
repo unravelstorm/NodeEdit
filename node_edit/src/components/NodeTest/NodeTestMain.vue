@@ -14,6 +14,7 @@ import ButtonNode from "@/components/NodeTest/CustomNode/ButtonNode.vue";
 import ProgressNode from "@/components/NodeTest/CustomNode/ProgressNode.vue";
 import ConditionNode from "@/components/NodeTest/CustomNode/ConditionNode.vue";
 import {MiniMap} from "@vue-flow/minimap";
+import EmptyNode from "@/components/NodeTest/CustomNode/EmptyNode.vue";
 
 
 const nodes = ref(initialNodes)
@@ -135,6 +136,10 @@ const upFile = ref(null)
             </template>
             <template #node-Condition="conditionNodeProps">
               <ConditionNode v-bind="conditionNodeProps"/>
+            </template>
+
+            <template #node-Empty="emptyNodeProps">
+              <EmptyNode v-bind="emptyNodeProps"/>
             </template>
 
           </VueFlow>

@@ -20,6 +20,7 @@ props.data.NodeType = 11
 
       <v-text-field label="显示内容" variant="outlined" v-model="props.data.ProgressText"></v-text-field>
       <v-text-field label="倒计时" type="number" variant="outlined" v-model="props.data.ProgressValue"></v-text-field>
+      <v-text-field label="排序" type="number" variant="outlined" v-model="props.data.Order"></v-text-field>
 
     </v-card>
     <Handle type="source" :position="Position.Right"/>

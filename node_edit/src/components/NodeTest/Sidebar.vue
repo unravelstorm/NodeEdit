@@ -10,6 +10,7 @@ const {onDragStart} = useDragAndDrop()
 
     <div class="nodes">
 
+      <div class="vue-flow__node-default" :draggable="true" @dragstart="onDragStart($event, 'Empty')">空节点</div>
       <div class="vue-flow__node-default" :draggable="true" @dragstart="onDragStart($event, 'Content')">内容节点</div>
       <div class="vue-flow__node-default" :draggable="true" @dragstart="onDragStart($event, 'Button')">按钮节点</div>
       <div class="vue-flow__node-default" :draggable="true" @dragstart="onDragStart($event, 'Progress')">倒计时节点</div>
